@@ -1,13 +1,113 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&family=Open+Sans&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link href="./css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-  <h1 class="text-3xl font-bold">
-    Hello world!
-  </h1>
+
+  <!--HEADER-->
+  <header class="bg-black py-6 lg:py-12 text-gega-grey uppercase">
+    <div class="container flex items-center justify-between space-x-8 lg:space-x-16">
+      <!--LOGO-->
+      <a href="#" class="pl-4 md:pl-0 text-4xl lg:text-6xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-grey">GEGA</a>
+
+      <!--MOBILE NAVBAR-->
+      <div class="block md:hidden ">
+        <div class="space-y-1 cursor-pointer pr-4 ">
+          <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+          <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+          <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+        </div>
+      </div>
+      
+      <!--NAVBAR-->
+      <nav class="hidden md:flex justify-between flex-1 ">
+        <!--MENU-->
+        <div class="flex items-center lg:text-lg space-x-4 lg:space-x-8">
+          <a href="" class="hover:text-gega-melon transition duration-500">Movies</a>
+          <a href="" class="hover:text-gega-melon transition duration-500">celeb</a>
+          <a href="" class="hover:text-gega-melon transition duration-500">blog</a>
+          <a href="" class="hover:text-gega-melon transition duration-500">news</a>
+          <a href="" class="hover:text-gega-melon transition duration-500">about</a>
+        </div>
+        <!--LOGIN-->
+        <div class="flex items-center space-x-4 lg:space-x-8">
+          <!--SEARCH-->
+          <form action="">
+            <div class="group border-r px-4 mx-4 py-1 border-gega-red ">
+              <input type="text" class="opacity-0 group-hover:opacity-100 bg-transparent border-b border-gega-red focus:outline-none w-24 lg:w-44 transition duration-500">
+              <button class="-ml-4 group-hover:ml-0 transition duration-500"><i class="fas fa-search group-hover:text-gega-red transition duration-500"></i></button>
+            </div>
+          </form>
+          <!--SIGNUP-->
+          <div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
+            <a href="" class="">Login</a>
+            <a href="" class="bg-gega-red px-3 py-1 hover:bg-rose-500 hover:text-gega-grey cursor-pointer transition duration-500 whitespace-nowrap">Sign-up</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<!--HERO-->
+
+<section class="h-64 md:h-96 lg:h-128 group relative">
+  <!--HERO IMAGE-->
+  <img src="./images/batman.jpg" alt="Main Image" class="h-full w-full object-cover">
+  <!--HERO CONTENT-->
+  <div class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-black">
+    <!--HERO CONTENT CONT-->
+    <div class="container pl-10 lg:pl-0">
+      <h3 class="text-gega-melon tracking-wider  group-hover:mb-1 duration-500">ACTION, RAMA, THRILLER</h3>
+      <h1 class="text-4xl lg:text-6xl text-gega-grey group-hover:mb-1 duration-500">THE DARK NIGHT</h1>
+      <p class="text-gega-grey group-hover:mb-2 duration-500 text-sm lg:text-base w-3/4 lg:w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolore, similique ut voluptas recusandae hic nisi placeat ex voluptatibus sint.</p>
+      <!--DETAIL CONT-->
+      <div class="flex space-x-8 opacity-0 group-hover:opacity-100 group-hover:mb-10  lg:group-hover:mb-20 duration-1000">
+
+      <div class="flex space-x-2 items-center cursor-pointer">
+          <a href="" class="text-gega-grey uppercase lg:text-lg hover:text-gega-red duration-500">Watch Trailer</a>
+          <div class="flex w-8 h-8 text-center items-center rounded-full justify-center bg-gega-red text-gega-grey">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+
+      
+        <div class="flex space-x-2 items-center cursor-pointer">
+          <a href="" class="text-gega-grey uppercase lg:text-lg hover:text-gega-red duration-500">Full Synopsis</a>
+          <div class="flex w-8 h-8 text-center items-center rounded-full justify-center bg-gega-red text-gega-grey">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--POINT-->
+  <div class="flex space-x-3 absolute bottom-5 left-10 opacity-0 group-hover:opacity-100 duration-1000">
+    <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-grey"></div>
+    <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-red"></div>
+    <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-grey"></div>
+    <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-grey"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
 </body>
 </html>
